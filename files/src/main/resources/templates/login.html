@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+</head>
+<body>
+
+<h1>欢迎访问用户文件管理系统</h1>
+
+<form th:action="@{/user/login}" method="post">
+    username:<input type="text" name="username"/> <br>
+    password:<input type="password" name="password" /> <br>
+    <input type="submit" value="登录">
+    <a th:href="@{/register}">去注册</a>
+</form>
+
+</body>
+</html>
